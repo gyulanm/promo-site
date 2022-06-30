@@ -1,0 +1,120 @@
+body{
+    background-color: #ffffff;
+}
+.container {
+    max-width: 100%;
+    margin: 0 100px;
+    
+}
+
+.content{
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.nav__link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+section {
+    width: 100vw;
+    position: relative;
+    box-sizing: border-box;
+    height: max-content;
+}
+
+.feature {
+    height: 382px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 50vh;
+    transform: translateY(-50%);
+}
+
+.feature__line {
+    width: 1px;
+    height: 200px;
+    background-color: #ffffff;
+    box-sizing: content-box;
+    position: relative;
+
+}
+.feature__line:before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -18px;
+    left: -3px;
+
+}
+.feature__line:after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    bottom: -18px;
+    left: -3px;
+}
+.feature__text {
+    font-family: 'Hyperspace_Cyrillic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 50px;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+    width: 50px;
+}
+.feature__text--right {
+    transform: rotate(90deg);
+}
+.feature--purple .feature__text {
+    color: #110892
+}
+.feature--purple .feature__line {
+    background-color: #110892
+}
+.feature--purple .feature__line::before {
+    background-color: #110892
+}
+.feature--purple .feature__line::after {
+    background-color: #110892
+}
+
+@media screen and (max-width: 1024px) {
+    .feature__text--support {
+        grid-template-columns: 1fr;
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav__link {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav__link {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,39 @@
+.header {
+    padding: 50px;
+    margin: 0 auto 50px;
+    /* margin-bottom: 50px; */
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.header__nav {
+    font-family: "Montserrat";
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.header__nav--grey {
+    color: #4A4A4A;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 25px;
+        margin: 0 auto 25px;
+    }
+
+    .header__nav{
+        font-size: 16px;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header__nav{
+        max-width: 300px;
+    }
+}
+
+

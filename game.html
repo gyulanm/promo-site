@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>игра</title>
+</head>
+
+<body>
+    <header class="header game-header">
+        <nav class="header__nav nav header__nav--grey">
+            <a class="nav__link" href="./index.html">О нас</a>
+            <a class="nav__link" href="./catalog.html">Каталог</a>
+            <a class="nav__link" href="./game.html">Игра</a>
+            <a class="nav__link" href="./support.html">Поддержка</a>
+        </nav>
+    </header>
+    <section class="boxes">
+        <div class="feature feature--purple game-feature">
+            <p class="feature__text ">Garden</p>
+            <div class="feature__line"></div>
+            <p class="feature__text ">Digital</p>
+        </div>
+        <div class="content">
+            <div class="screen">
+                <div class="game-content">
+                    <img src="./img/boxbig.svg" alt="">
+                    <a href="#" class="start" id="start">Начать игру</a>
+                </div>
+            </div>
+            <div class="screen">
+                <div class="game-content">
+                    <h1>Выберите время</h1>
+                    <ul class="time-list" id="time-list">
+                        <li>
+                            <button class="time-btn" data-time="10">
+                                10 сек
+                            </button>
+                        </li>
+                        <li>
+                            <button class="time-btn" data-time="20">
+                                20 сек
+                            </button>
+                        </li>
+                        <li>
+                            <button class="time-btn" data-time="30">
+                                30 сек
+                            </button>
+                        </li>
+                        <li>
+                            <button class="time-btn" data-time="60">
+                                60 сек
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="screen">
+                <div class="board" id="board">
+                    <div class="time" id="time"></div>
+                    <div class="score" id="score"></div>
+                </div>
+            </div>
+        </div>
+        <div class="feature feature--purple game-feature">
+            <p class="feature__text feature__text--right">Digital</p>
+            <div class="feature__line"></div>
+            <p class="feature__text feature__text--right">Garden</p>
+        </div>
+    </section>
+    <script src="./js/game.js">
+
+    </script>
+</body>
+
+</html>
